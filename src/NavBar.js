@@ -8,18 +8,7 @@ const NavBar = (props) => {
         <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li>
-
-            <Link to="/cats">Cats</Link>
-            <ul>
-                <li>
-                    <Link to ="/cats/stacey">Stacey</Link>
-                </li>
-                <li>
-                    <Link to="cats/sasha">Sasha</Link>
-                </li>
-            </ul>
-        </li>
+        <li><Link to="/cats">Cats</Link></li>
 
       </ul>
     )
