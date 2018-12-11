@@ -72,7 +72,10 @@ class App extends Component {
       <Route path="/cats/:catName" render={(props) => {
         return <OneCat toys={this.state.catToys} {...props} />
       }} />
-      <Route path="/dogs" component={Dogs} />
+      {/* <Route path="/dogs" component={Dogs} /> */}
+      <Route path="/dogs" render={(props) => {
+        return <Dogs dogList={Object.keys(this.state.dogToys)} {...props} />
+      }} />
       </div>
       </Router>
     );
