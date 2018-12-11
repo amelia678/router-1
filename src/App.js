@@ -40,21 +40,32 @@ class App extends Component {
         ]
       },
 
-      dogToys: {
-        'Riley': [
-          'bones',
-          'cat toys'
-        ],
+      Dogs: {
+        'Riley': {
+          'owner': 'krystan',
+          'toys': [
+            'bones',
+            'cat toys'
+          ]
+        },
 
-        'Toby': [
-          'lamby',
-          'bone'
-        ],
+        'Toby': {
+          'owner': 'kate',
+          'toys': [
+            'lamby',
+            'bone'
+          ]
+          },
 
-        'Peaches' :[
-          'heater',
-          'porkchops'
-        ]
+        'Peaches' :{
+          'owner': 'robbie',
+          'toys' : [
+            'heater',
+            'porkchops'
+          ]
+        }
+          
+        
       }
     }
   }
@@ -74,7 +85,7 @@ class App extends Component {
       }} />
       {/* <Route path="/dogs" component={Dogs} /> */}
       <Route path="/dogs" render={(props) => {
-        return <Dogs dogList={Object.keys(this.state.dogToys)} {...props} />
+        return <Dogs dogList={Object.keys(this.state.Dogs)} {...props} />
       }} />
       </div>
       </Router>
