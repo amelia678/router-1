@@ -13,6 +13,7 @@ import Cats from './Cats';
 import About from './About';
 import Home from './Home';
 import OneCat from './OneCat';
+import Dogs from './Dogs';
 
 class App extends Component {
   constructor(props) {
